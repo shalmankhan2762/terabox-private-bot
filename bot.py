@@ -30,6 +30,6 @@ async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await update.message.reply_text(f"❌ Error: {e}")
 
-app = ApplicationBuilder().token(BOT_TOKEN).build()
+app = ApplicationBuilder().token(8531531431:AAGxfmA3RCv0RQ-YKcVg2abHMJxy7AeDDxo).build()
 app.add_handler(MessageHandler(filters.TEXT, handle))
 app.run_polling()
